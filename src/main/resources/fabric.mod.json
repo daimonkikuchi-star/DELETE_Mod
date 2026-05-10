@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "deletemod",
+  "version": "1.0.0",
+  "name": "Delete Mod",
+  "description": "/delete <target> - WARNINGタイトル点滅 + enchanted_hitパーティクル + 10秒後Y=-1024へ移動",
+  "authors": ["YourName"],
+  "license": "MIT",
+  "environment": "server",
+  "entrypoints": {
+    "main": ["com.deletemod.DeleteMod"]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "fabric-api": "*",
+    "minecraft": "~1.21.5"
+  }
+}
