@@ -119,7 +119,7 @@ public class DeleteMod implements ModInitializer {
 
             // 0になったらY=-1024へテレポート
             if (newTick <= 0) {
-                entity.teleport(entity.getX(), -1024, entity.getZ());
+                entity.teleport(world, entity.getX(), -1024, entity.getZ(), java.util.Set.of(), entity.getYaw(), entity.getPitch(), false);
 
                 if (entity instanceof ServerPlayerEntity player) {
                     player.networkHandler.sendPacket(new ClearTitleS2CPacket(true));
