@@ -23,7 +23,7 @@ jobs:
       - name: Gradle をセットアップ
         uses: gradle/actions/setup-gradle@v3
         with:
-          gradle-version: '8.11'
+          gradle-version: '8.12'
 
       - name: MOD をビルド
         run: gradle build
